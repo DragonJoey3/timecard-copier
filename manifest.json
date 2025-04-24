@@ -1,0 +1,10 @@
+{
+  "name": "Tiber To CACI Timecard",
+  "description": "Copies Tiber Timecard to CACI",
+  "version": "0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/logo.png"
+  }
+}
