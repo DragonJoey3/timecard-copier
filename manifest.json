@@ -6,5 +6,13 @@
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": "images/logo.png"
-  }
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/mainCopyScript.js"],
+      "matches": [
+        "https://accounting.procas.com/ProcasACT/Modules/TimeSystem/TimeCard/*"
+      ]
+    }
+  ]
 }
