@@ -1,6 +1,3 @@
-// Select all <td> elements that contain <a> tags
-const TRs = document.querySelectorAll('tr.time_timecardtable');
-
 let totalVals = [];
 
 let startCopy = false;
@@ -35,6 +32,9 @@ function processTRs(currentValue){
     tds.forEach(processTDs)
 }
 
+function copyTimecardValues(){
+    // Select all <td> elements that contain <a> tags
+const TRs = document.querySelectorAll('tr.time_timecardtable');
 TRs.forEach(processTRs);
 
 totalVals.pop();
@@ -83,4 +83,4 @@ const finalString = [BillLine1, BillLine2, BillLine3, BillLine4]
     .join('\n');
 
 navigator.clipboard.writeText(finalString).then(()=>{alert("Copied to clipboard!");});
-
+}
